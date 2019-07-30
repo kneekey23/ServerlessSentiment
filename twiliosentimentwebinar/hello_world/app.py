@@ -20,6 +20,6 @@ def lambda_handler(event, context):
 
     return {
         "statusCode": 200,
-        "body": '<?xml version="1.0" encoding="UTF-8"?><Response><Message><Body>' + 'Hello World' + '</Body></Message></Response>',
+        "body": '<?xml version="1.0" encoding="UTF-8"?><Response><Message><Body>' + sentiment + '</Body></Message></Response>',
         "headers": {"Content-Type": "application/xml"}
     }
